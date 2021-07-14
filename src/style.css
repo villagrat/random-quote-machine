@@ -1,0 +1,67 @@
+/* fading transition between each quote would be cool too */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+.colorScheme{
+  
+}
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#quote-box {
+  border-radius: 3px;
+  position: relative;
+  width: 450px;
+  padding: 40px 50px;
+  display: table;
+  background-color: white;
+}
+#new-quote{
+  position: relative;
+  top: 7px;
+  left: 50%;
+  padding: 7px;
+  transform: translateX(-50%);
+}
+#tweet-quote{
+      height: 38px;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      background-color: #00aceb;
+      outline: none;
+      font-size: 0.85em;
+      padding: 8px 18px 6px 18px;
+      margin-top: 30px;
+      opacity: 1;
+      cursor: pointer;
+}
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 1.0em;
+  a {
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+/* readability CSS */
+#text, #author, #new-quote{
+  background-color: white !important;
+  font-family: 'Raleway', sans-serif;
+}
+#title, #footer{
+  font-family: 'Raleway', sans-serif;
+  color: white !important;
+}
+#link{
+  color: white !important;
+}
+#author{
+  font-style: italic;
+}
+#text{
+  font-size: 1.5em;
+}

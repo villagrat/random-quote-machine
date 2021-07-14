@@ -1,0 +1,42 @@
+<!-- 
+Note: Twitter does not allow links to be loaded in an iframe. Try using the target="_blank" or target="_top" attribute on the #tweet-quote element if your tweet won't load. target="_top" will replace the current tab so make sure your work is saved.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <!--Fontawesome lib -->
+    <script src="https://kit.fontawesome.com/841a176e81.js" crossorigin="anonymous"></script>
+  </head>
+  <body onload="init_quotes()" class="colorScheme">
+    <h1 id="title" class="text-center">Random Quote Machine</h1>
+    <div class="container">
+      <div id="quote-box">
+        <div id="text" class="text-center colorScheme">
+      
+        </div>
+        <div id="author" class="text-right colorScheme">
+        
+        </div>
+        
+        <a id="tweet-quote" class="twitter-share-button tweetbutton" target="_top"
+  ><i class="fab fa-twitter"></i>
+          Tweet this quote!
+        </a>
+        
+      </div>
+      
+    </div>
+    <div onClick="pickRandomQuote(); changeColor();" id="new-quote" class="btn btn-default colorScheme">
+          New quote
+        </div>
+    <div id="footer" class="footer">by <a id="link" href="https://codepen.io/villagrat/">&#64;villagrat</a></div>
+  </body>
+</html>
